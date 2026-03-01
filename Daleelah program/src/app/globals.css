@@ -1,0 +1,6 @@
+@import "../styles/theme.css";
+@import "../styles/sadu.css";
+
+* { box-sizing: border-box; }
+body { margin: 0; background: #0b0b0b; color: #fff; font-family: system-ui, Arial; }
+a { color: inherit; text-decoration: none; }

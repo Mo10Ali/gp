@@ -1,0 +1,137 @@
+:root {
+  /* Saudi Colors */
+  --saudi-green: #006C35;
+  --saudi-green-light: #008844;
+  --saudi-gold: #D4AF37;
+  --saudi-gold-light: #F4D03F;
+  --sand: #E8D5B7;
+  --dark-sand: #C4A57B;
+  
+  /* Base */
+  --bg: #0a0a0a;
+  --card: #121212;
+  --border: #232323;
+  --muted: rgba(255,255,255,.7);
+  --text: #ffffff;
+  
+  /* Accent */
+  --accent: var(--saudi-green);
+  --accent-hover: var(--saudi-green-light);
+  --gold: var(--saudi-gold);
+  
+  /* Layout */
+  --radius: 16px;
+  --max-width: 1200px;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #006C35 0%, #008844 100%);
+  --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F4D03F 100%);
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--saudi-green);
+  box-shadow: 0 8px 24px rgba(0, 108, 53, 0.15);
+  transform: translateY(-2px);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  border-color: var(--saudi-green);
+  background: rgba(0, 108, 53, 0.1);
+  transform: translateY(-1px);
+}
+
+.btnPrimary {
+  background: var(--gradient-primary);
+  border: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+.btnPrimary:hover {
+  box-shadow: 0 4px 16px rgba(0, 108, 53, 0.4);
+  transform: translateY(-2px);
+}
+
+.btnGold {
+  background: var(--gradient-gold);
+  border: none;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #0f0f0f;
+  color: var(--text);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  border-color: var(--saudi-green);
+  box-shadow: 0 0 0 3px rgba(0, 108, 53, 0.1);
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+/* Saudi Colors */
+:root {
+  --saudi-green: #006C35;
+  --saudi-green-light: #008844;
+  --saudi-gold: #D4AF37;
+  --saudi-gold-light: #F4D03F;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  border-color: var(--saudi-green);
+  box-shadow: 0 8px 24px rgba(0, 108, 53, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Button Hover */
+.btn:hover {
+  border-color: var(--saudi-green);
+  background: rgba(0, 108, 53, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Primary Button with Green Gradient */
+.btnPrimary {
+  background: linear-gradient(135deg, #006C35 0%, #008844 100%);
+  border: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+.btnPrimary:hover {
+  box-shadow: 0 4px 16px rgba(0, 108, 53, 0.4);
+  transform: translateY(-2px);
+}
